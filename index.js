@@ -10,11 +10,11 @@ function create(data) {
     let wrapper = document.createElement("article");
     wrapper.classList.add("content");
     wrapper.innerHTML = `
-    <a class="" href="./about.html?id=${slug}">
+    <a class="" href="./about.html?id=${name.slug}">
     <div class="img-container">
     <img
       src="${flags.png}"
-      alt=${flags.alt}
+      alt=${"flags"}
     />
   </div>
   <div class="cocktail-footer">
@@ -28,8 +28,8 @@ function create(data) {
     card.appendChild(wrapper);
   });
 }
-
 const select = document.querySelector("#select");
+console.log(select.value);
 if (!select.value == "all") {
   fetch(
     `https://frontend-mentor-apis-6efy.onrender.com/countries?region=${select.value}`
@@ -40,7 +40,7 @@ if (!select.value == "all") {
       create(data.data);
       loader.classList.add("hidden");
     })
-    .catch((error) => {
+    .catch((eror) => {
       error.classList.remove("hidden");
       loader.classList.add("hidden");
     });
@@ -52,7 +52,7 @@ if (!select.value == "all") {
       create(data.data);
       loader.classList.add("hidden");
     })
-    .catch((error) => {
+    .catch((eror) => {
       error.classList.remove("hidden");
       loader.classList.add("hidden");
     });
@@ -132,7 +132,6 @@ button.addEventListener("submit", (e) => {
   }
   button1.value = "";
 });
-
 const darkMode = document.querySelector("#mode");
 const modesimg = document.querySelector("#modesimg");
 let modes = document.body;

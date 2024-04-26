@@ -61,6 +61,25 @@ body {
   font-weight: 300;
 }
 
+.cardsswrap {
+  background: var(--kil-bacjk);
+  color: var(--tect-colr);
+  border-radius: 3px;
+  cursor: pointer;
+  width: 264px;
+  height: 336px;
+  gap: 0px;
+  border-radius: 5px 5px 0px 0px;
+  opacity: 0px;
+  box-shadow: 1px 1px 8px -1px rgba(34, 60, 80, 0.2);
+}
+.cardsswrap img {
+  border-radius: 3px;
+  width: 100%;
+  padding-bottom: 10px;
+  max-width: 500px;
+}
+
 header {
   width: 100%;
   box-shadow: -4px 28px 21px 0px rgba(34, 60, 80, 0.2);
