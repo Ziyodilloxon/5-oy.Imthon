@@ -15,7 +15,7 @@ function create(iu) {
   } = iu;
   createui.innerHTML = `
   <div class="container">
-  <a class="abtn backhome" href="./index.html">back home</a>
+  <a class="abtn backhome" href="./index.html"> <- back home</a>
 </div>
 <div class="tlastdiv">
   <div class="bi">

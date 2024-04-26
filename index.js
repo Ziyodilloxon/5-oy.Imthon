@@ -159,8 +159,3 @@ darkMode.addEventListener("click", () => {
     localStorage.setItem("darkMode", "light");
   }
 });
-all.addEventListener((onchange) => {
-  function refresh() {
-    location.reload();
-  }
-});

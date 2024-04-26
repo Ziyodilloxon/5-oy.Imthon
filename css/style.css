@@ -159,6 +159,12 @@ header {
   border: none;
   background: var(--bg-colors);
   color: var(--text-color);
+  position: relative;
+  top: 48px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0 14px 4px 14px;
+  height: 25px;
 }
 
 .cards {
